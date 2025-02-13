@@ -63,8 +63,10 @@ function levels() {
                 levelCount = 1;
             if (box.children[i].innerText == 256)
                 levelCount = 2;
-            if (box.children[i].innerText == 512)
+            if (box.children[i].innerText == 512){
                 levelCount = 3;
+                break;
+            }
             if (box.children[i].innerText == 1024) {
                 levelCount += 1;
             }
