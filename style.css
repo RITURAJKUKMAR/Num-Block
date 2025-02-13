@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: wheat;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+main {
+    .content {
+        margin: 20px auto;
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        border: 1px black solid;
+        border-radius: 10px;
+        padding: 7px;
+
+        .info {
+            background-color: red;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .game-boxs {
+            background-color: black;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            height: calc(100% - 110px);
+
+            .box {
+                background-color: rgb(92, 92, 92);
+                padding: 5px;
+                margin: 0 1px;
+                width: 19%;
+                height: 97%;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+
+                .num {
+                    background-color: skyblue;
+                    align-content: center;
+                    font-size: 24px;
+                    height: 10%;
+                    width: 90%;
+                    border-radius: 7px;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .new-num {
+            height: 70px;
+            background-color: rgb(84, 145, 95);
+            border-radius: 0 0 7px 7px;
+            display: flex;
+            justify-content: center;
+
+            .curr,
+            .next {
+                background-color: skyblue;
+                display: inline;
+                align-content: center;
+                padding: 10px 30px;
+                font-size: 30px;
+                border-radius: 7px;
+                margin: 0 5px;
+                border: 1px black solid;
+            }
+
+            .next {
+                margin-top: 20px;
+                padding: 0 15px;
+                height: 50px;
+                background-color: orange;
+            }
+        }
+    }
+}
+
+.new-game{
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    main {
+        .content {
+            width: 90%;
+        }
+    }
+}
